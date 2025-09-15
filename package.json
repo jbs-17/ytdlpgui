@@ -13,7 +13,8 @@
     "mongoose": "^8.18.1",
     "multer": "^2.0.2",
     "sanitize-filename": "^1.6.3",
-    "winston": "^3.17.0"
+    "winston": "^3.17.0",
+    "winston-daily-rotate-file": "^5.0.0"
   },
   "name": "ytdlpgui",
   "version": "1.0.0",

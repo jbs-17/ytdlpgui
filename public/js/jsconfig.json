@@ -1,0 +1,6 @@
+{
+  "include": ["./anime.iife.js", "*.js"],
+  "compilerOptions": {
+    "checkJs": true
+  }
+}
