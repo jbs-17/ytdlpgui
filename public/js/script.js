@@ -1,2 +1,3 @@
-/// <reference path="./anime.iife.js" />
-const { animate } = anime;
+/// <reference path="./anime.iife.min.js" />
+
+animate
