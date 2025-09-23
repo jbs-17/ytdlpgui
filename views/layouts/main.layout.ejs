@@ -1,21 +1,22 @@
 <!DOCTYPE html>
 <html lang="en" bs-theme="dark">
-  <%- include('../partials/head.ejs')  %>
+<%- include('../partials/head.ejs') %>
 <body>
 
-  <div
-    class="container"
-    >
-<%- include('../partials/navbar-top.ejs')  %>
-    
-    <div class="container-lg min-vh-100">
-      <%- body %>
+  <%- include('../partials/navbar-top.ejs') %>
+
+  <main class="min-vh-100 mt-3 mb-3" >
+    <div class="container p-4">
+          <%- body %>
     </div>
-    
-    
-    <%- include('../partials/footer.ejs')  %>
-  </div>
+
+
+  </main>
+
+  <%- include('../partials/footer.ejs') %>
 
   <script src="js/bootstrap.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/eruda"></script>
+<script>eruda.init();</script>
 </body>
 </html>
