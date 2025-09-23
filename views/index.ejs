@@ -1,48 +1,52 @@
 <!-- title -->
-<div class="">
-  <h1 class="fs-4">
-    Whats for?
+
+<div class="mb-lg-5">
+  <h1 class="fs-1">
+    <span class="text-black fw-bolder">YTDLP</span>
+    with
+    <span class="text-muted fw-normal ms-1">Graphical User Interface</span>
   </h1>
-  <p class="fs-6 fw-normal ">
-    This website provide you a structured <a target="_blank" class="link" href="https://github.com/yt-dlp/yt-dlp">
-      yt-dlp tool
-    </a>that is wrapped into a website view for ease of use
+  <h2 class="fs-3">
+    A feature-rich graphical user interface audio/video downloader
+  </h2>
+  <hr class="" />
+  <p class="fs-6 fw-normal mt-1">
+    This website provide you a structured
+    <a target="_blank" class="link" href="https://github.com/yt-dlp/yt-dlp">
+      yt-dlp tool </a
+    >that is wrapped into a website view for ease of use
   </p>
 </div>
 
 <div class="container mt-5">
-  <h2 class="fs-5">
-    Trial use
-  </h2>
-  <p class="fs-6">
-    Free trial, download YouTube, TikTok, Facebook videos!
-  </p>
-  <form id="download-free-trial" class="hidden" type="hidden">
-  </form>
+  <h2 class="fs-5">Limited trial</h2>
+  <p class="fs-6">download YouTube, TikTok, Facebook video!</p>
+  <form id="download-free-trial" class="hidden" type="hidden"></form>
   <div class="input-group mb-3">
-
-    <input pattern="*(https)" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+    <input
+      pattern="h"
+      autocomplete="url"
+      placeholder="video url"
+      type="url"
+      class="form-control"
+      aria-label="Sizing example input"
+      aria-describedby="inputGroup-sizing-default"
+    />
 
     <button type="button" class="btn btn-dark">download</button>
   </div>
 </div>
 
-
 <div class="container mt-5">
-  <h2 class="fs-5">
-    Unlimited use
-  </h2>
+  <h2 class="fs-5">Unlimited use</h2>
   <p class="fs-6">
-    For unlimited use, register an account or login and enjoy the services we provide.
+    For unlimited use, register an account or login and enjoy the services we
+    provide.
   </p>
-  <form id="download-free-trial" class="hidden" type="hidden">
-  </form>
+  <form id="download-free-trial" class="hidden" type="hidden"></form>
   <div class="d-flex mb-3 gap-1 justify-content-evenly">
+    <a href="/register" type="button" class="btn btn-dark col-4">register</a>
 
-    <button type="button" class="btn btn-dark col-4">register</button>
-
-    <button type="button" class="btn btn-dark col-4">login</button>
+    <a href="/login" type="button" class="btn btn-dark col-4">login</a>
   </div>
-
-
 </div>

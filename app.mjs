@@ -10,6 +10,7 @@ import { rateLimiter } from "./middlewares/rate-limit.middleware.mjs";
 import { userRouter } from "./routers/user.router.mjs";
 import expressEjsLayouts from "express-ejs-layouts";
 import { globalMiddleware } from "./middlewares/global.middleware.mjs";
+import { notFound404Controller } from "./controllers/404.controller.mjs";
 
 
 const app = express();
@@ -50,6 +51,8 @@ app.get(`/`, (req, res) => {
   // return res.send( `ytdlpgui project under construction!` );
 });
 
+
+app.use(notFound404Controller);
 
 
 if (cluster.default.isPrimary) {

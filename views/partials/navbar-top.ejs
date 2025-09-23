@@ -1,7 +1,35 @@
-<header class="navbar nav bg-white py-3 border-bottom border-3 ">
+<header class="navbar navbar-expand-lg navbar-light bg-white py-3 border-bottom border-3">
+  <div class="container-fluid col-12 d-flex">
+    <!-- Branding -->
+    <div class="d-flex align-items-center fs-3 fw-bolder me-auto" onclick="location.href = '/'" style="cursor: pointer;">
+      <span class="text-black fw-bolder">YTDLP</span>
+      <span class="text-muted fw-normal ms-1">GUI</span>
+    </div>
+
+    <!-- Toggle Button -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" 
+      aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Navbar Links -->
+    <div class="collapse navbar-collapse mt-3 mt-lg-0 justify-content-center" id="navbarNavAltMarkup">
+      <div class="navbar-nav ms-auto">
+        <a class="nav-link active" aria-current="page" href="/">Home</a>
+        <a class="nav-link" href="/login">Login</a>
+        <a class="nav-link" href="/register">Register</a>
+        <a class="nav-link" href="/api">API</a>
+        <a class="nav-link" href="/app">APP</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+<!-- <header class="navbar nav bg-white py-3 border-bottom border-3 ">
   <div class="row d-flex col-12">
 
-    <!-- Logo -->
+    
     <div class="col-2 d-flex flex-row fs-3 ms-3" onclick="location.href = '/'">
       <span class="fw-bolder text-black d-inline">
         YTDLP
@@ -12,7 +40,20 @@
     </div>
 
     
-
+<ul class="nav justify-content-center position-absolute">
+  <li class="nav-item">
+    <a class="nav-link active" aria-current="page" href="#">Active</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">Link</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">Link</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link disabled">Disabled</a>
+  </li>
+</ul>
 
   </div>
-</header>
+</header> -->

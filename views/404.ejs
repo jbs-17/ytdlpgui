@@ -1,0 +1,19 @@
+<div class="container d-flex justify-content-center align-items-center">
+  <div class="text-center p-5 ">
+    <h1 class="fs-1 fw-bolder text-danger">404 - Not Found</h1>
+    <hr class="my-4">
+    <h2 class="fs-4 text-dark">
+      Requested page 
+      <span class="text-muted fw-semibold"><%= data.path %></span> 
+      not found!
+    </h2>
+
+    <a
+      class="btn btn-dark mt-4"
+      href="<%= data.referer || '/' %>"
+      role="button"
+    >
+      Back to page <%= data.referer || '/' %>
+    </a>
+  </div>
+</div>

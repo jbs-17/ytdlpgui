@@ -17,7 +17,7 @@ export const configs = {
         ...data,
       },
       {
-        get: (target, prop) => target[prop] ?? "-",
+        get: (target, prop) => target[prop] ?? "",
       }
     );
 
