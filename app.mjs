@@ -11,8 +11,8 @@ import { userRouter } from "./routers/user.router.mjs";
 import expressEjsLayouts from "express-ejs-layouts";
 import { globalMiddleware } from "./middlewares/global.middleware.mjs";
 import { notFound404Controller } from "./controllers/404.controller.mjs";
-
-
+import { internalError500 } from "./controllers/500.controller.mjs";
+import {demo} from './routers/demo.router.mjs'
 const app = express();
 
 //middleware
@@ -42,7 +42,7 @@ app.use((req, res, next) => {
 
 app.use(globalMiddleware)
 app.use("/user", userRouter);
-
+app.use('/demo', demo)
 // @ts-ignore
 app.get(`/`, (req, res) => {
   return res.render("index", configs.EJSDATA({
@@ -53,11 +53,11 @@ app.get(`/`, (req, res) => {
 
 
 app.use(notFound404Controller);
-
+app.use(internalError500);
 
 if (cluster.default.isPrimary) {
   app.listen(configs.PORT, () => {
-    logger.info(`standalone primary master running on port ${configs.PORT}...`);
+    logger.info(`app.mjs only running on port ${configs.PORT}...`);
   });
 }
 

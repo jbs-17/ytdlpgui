@@ -7,7 +7,6 @@ export async function internalError500(req = express.request, res=express.respon
     res.render('500.ejs', configs.EJSDATA({
       title: "Error",
       path: req.path,
-      
     }))
   } catch {
     res.json({
